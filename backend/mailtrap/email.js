@@ -3,7 +3,7 @@ import {
 	VERIFICATION_EMAIL_TEMPLATE,
 	PASSWORD_RESET_REQUEST_TEMPLATE,
 	PASSWORD_RESET_SUCCESS_TEMPLATE,
-    WELCOME_EMAIL_TEMPLATE
+	WELCOME_EMAIL_TEMPLATE,
 } from "./emailTemplates.js";
 import { resetPassword } from "../controllers/auth.controller.js";
 export const sendVerificationEmail = async (email, verificationToken) => {
@@ -39,10 +39,7 @@ export const sendWelcomeEmail = async (email, name) => {
 			from: sender,
 			to: recipients,
 			subject: "Verification Code",
-			html: WELCOME_EMAIL_TEMPLATE.replace(
-				"{userName}",
-				name
-			),
+			html: WELCOME_EMAIL_TEMPLATE.replace("{userName}", name),
 			category: "Email Verification",
 		});
 	} catch (error) {
