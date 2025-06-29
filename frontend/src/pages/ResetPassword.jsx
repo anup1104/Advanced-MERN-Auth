@@ -15,7 +15,7 @@ function ResetPassword() {
 		e.preventDefault();
 		try {
 			const response = await fetch(
-				`https://authproject.onrender.com/api/auth/reset-password/${token}`,
+				`http://localhost:5000/api/auth/reset-password/${token}`,
 				{
 					method: "POST",
 					headers: {

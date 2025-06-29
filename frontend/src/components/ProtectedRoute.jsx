@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
 	useEffect(() => {
 		const checkAuth = async () => {
 			try {
-				const res = await fetch("https://authproject.onrender.com/api/auth/check-auth", {
+				const res = await fetch("http://localhost:5000/api/auth/check-auth", {
 					method: "GET",
 					credentials: "include",
 				});

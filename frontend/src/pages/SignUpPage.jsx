@@ -14,7 +14,7 @@ function SignUpPage() {
 	e.preventDefault();
 
 	try {
-		const response = await fetch("https://authproject.onrender.com/api/auth/signup", {
+		const response = await fetch("https://localhost:5000/api/auth/signup", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
