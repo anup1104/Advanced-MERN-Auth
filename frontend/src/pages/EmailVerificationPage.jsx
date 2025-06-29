@@ -43,7 +43,7 @@ function EmailVerificationPage() {
 		const verificationCode = code.join("");
 		try {
 			const response = await fetch(
-				"http://localhost:5000/api/auth/verify-email",
+				"https://authproject.onrender.com/api/auth/verify-email",
 				{
 					method: "POST",
 					headers: {

@@ -9,7 +9,7 @@ const HomePage = () => {
 		const fetchProfile = async () => {
 			try {
 				const res = await fetch(
-					"http://localhost:5000/api/auth/get-profile",
+					"https://authproject.onrender.com/api/auth/get-profile",
 					{
 						method: "GET",
 						credentials: "include",
@@ -32,7 +32,7 @@ const HomePage = () => {
 
 	const handleLogout = async() => {
 		try{
-            const response = await fetch("http://localhost:5000/api/auth/logout",{
+            const response = await fetch("https://authproject.onrender.com/api/auth/logout",{
                 method:"POST",
                 credentials:"include",
             });
