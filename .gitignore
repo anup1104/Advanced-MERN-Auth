@@ -30,10 +30,10 @@ dist/
 dist-ssr/
 
 # Local environment files
-.env
-frontend/.env
-backend/.env
-*.local
+# .env
+# frontend/.env
+# backend/.env
+# *.local
 
 # Editor directories and files
 .vscode/*
